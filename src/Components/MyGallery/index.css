@@ -1,0 +1,287 @@
+/* <------------------------------ Sub-Component: NAVBAR ----------------------------> */
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color: rgb(40, 39, 39);
+    /* position: fixed; */
+}
+
+.nav-buttons {
+  display: block;
+  background-color: rgb(40, 39, 39);
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.nav-buttons:hover {
+  background-color: #111;
+}
+
+.nav-btn-link {
+  text-decoration: none;
+  width: 33.33%;
+}
+
+.active {
+  background-color: #111;
+}
+
+/* <----------------------------------------------------------------------> */
+/* <--------------------------------PHOTO GALLERY ---------------------------------> */
+/* <----------------------------------------------------------------------> */
+.photoGallery-container {
+    width: 100%;
+}
+
+/* <------------------------------ Sub-Component: ADD_UPDATE-MODAL ----------------------------> */
+.add-icon-icon {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 53px;
+    width: 65px;
+    font-size: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    color: beige;
+    background-color: #111;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.add-icon-icon:hover {
+  background-color: #1d1d1d;
+  color: green;
+}
+
+/* <------------------------------ Sub-Component: ALBUMS ----------------------------> */
+.no-albums_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  opacity: 0.5;
+}
+
+/* <------------------------------ Sub-Component: MY_ALBUMS ----------------------------> */
+
+.galleryHeading{
+    text-align: center;
+    margin: 0;
+}
+
+.del, .edit, .preview-gallery{
+    border: 1px solid black;
+    padding: 2px;
+    height: 20px;
+    width: 20px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+.del:hover  {
+    background-color: black;
+    color: red;
+}
+
+.edit:hover{
+    background-color: black;
+    color: green;
+}
+
+.preview-gallery:hover {
+    background-color: black;
+    color: beige;
+}
+
+.container {
+    display: inline-block;
+    padding: 40px;
+    max-width: 500px;
+    margin: 0;
+    height: 210px;
+    width: 210px;
+}
+
+.slide-show {
+    display: inline;
+    background-color: black;
+    cursor: pointer;
+}
+
+.slide-show:hover {
+    opacity: 0.4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 3px solid #111;
+    height: 210px;
+    width: 210px;
+    background-color: white;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0);
+    height: 100px;
+    width: 100px;
+    padding: 1px;
+}
+
+.drop-down {
+    position: absolute;
+    left: 1.5%;
+    top: 17.5%;
+    bottom: 5%;
+    height: 70vh;
+    width: 92%;
+    padding: 2rem;
+    border-radius: 0 0 5px 5px;
+    z-index: 5;
+    background: #FFF; 
+}
+
+.preview-btn {
+    height: 40px;
+    width: 40px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    top: 9%;
+    z-index: 2;
+}
+
+.preview-btn:hover {
+    color: red;
+    background-color: black;
+}
+
+/* <------------------------------ Sub-Component: ITEMS ----------------------------> */
+.myItem {
+    height: 415px;
+    width: 500px;
+}
+
+.myItem-container{
+    display: flex;
+    justify-content: center;
+    z-index: -5;
+}
+
+.deleteImage {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    padding: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.deleteImage:hover {
+    background-color: black;
+    color: red;
+}
+
+
+
+/* <--------------------------------VIDEO GALLERY ---------------------------------> */
+.videoGallery-container {
+    width: 100%;
+    height: 84vh;
+    background-color: rgb(135, 178, 180);
+}
+
+
+/* <--------------------------------USER PROFILE ---------------------------------> */
+
+.userProfile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.userProfile-myBtn {
+  height: 35px;
+  width: 30%;
+  margin: 20px;
+}
+
+.grid-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #111;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  font-size: 30px;
+  width: 149px;
+  height: 149px;
+  text-align: center;
+}
+
+.grid-img {
+  width: 149px;
+  height: 149px;
+  object-fit: "cover";
+}
+
+.grid-gallery-number {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 149px;
+  width: 149px;
+  right: -5px;
+  bottom: -5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+}
+
+.slide-show {
+  display: inline;
+  background-color: black;
+  cursor: pointer;
+}
+
+.slide-show:hover {
+  opacity: 0.6;
+}
+
+.conatiner {
+  display: inline-block;
+  padding: 50px;
+  max-width: 300px;
+  margin: 0;
+}

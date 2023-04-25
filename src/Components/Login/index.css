@@ -1,0 +1,87 @@
+.myLogin-bg-img {
+    z-index: 1;
+    background-image: url("./alexander-andrews-vpm9z4BLgRY-unsplash.jpg");
+    background-size: cover;
+    height: 90vh;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myLogin-heading {
+    text-align: center;
+    margin-top: 0;
+}
+
+.myLogin_hr {
+    margin: 10px;
+}
+
+.myLogin-err{
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: red;
+    color: white; 
+}
+
+.myLogin_error_msg {
+    color: red;
+}
+
+.myLogin-form {
+    z-index: 1;
+    position: absolute; 
+    right: 0;
+    margin: 10%;
+    margin-right: 6%;
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 55%;
+    padding: 16px;
+    background-color: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba(23, 22, 22,0.57);
+}
+
+.myLogin-inputs {
+    width: 90%;
+    padding: 15px;
+    margin: 22px 0 5px 0;
+    border: none;
+    background: #f1f1f1;
+    box-shadow: 0 8px 32px 0 rgba(23, 22, 22,0.57);
+}
+
+.myLogin-inputs:focus
+{
+    background-color: #ddd;
+    outline: none;
+}
+
+.myLogin_btn {
+    background-color: rgb(23, 22, 22);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 22px 0 10px 0;   
+}
+
+.myLogin_btn:hover {
+    opacity: 0.95;
+}
+
+.myLogin_myLink {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.myLogin_myLink:hover {
+    border-bottom: 1px solid black;
+}
